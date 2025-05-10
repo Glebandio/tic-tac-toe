@@ -1,0 +1,22 @@
+.game_board {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+
+.game_board-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 8px;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 59px 54px 55px;
+    grid-template-rows: 54px 53px 56px;
+}
+
+.game_board-body > .field:nth-child(n+4):nth-child(-n+6) {
+    margin: 0 auto;
+}

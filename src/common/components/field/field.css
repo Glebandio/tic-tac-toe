@@ -1,0 +1,36 @@
+.game_field {
+    height: 100%;
+    width: 100%;
+}
+
+.game_field-mark {
+    margin:  7px auto 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes blink {
+    0% { opacity: 0.1; }
+    25% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+    75% { opacity: 0.4; }
+    100% { opacity: 0.1; }
+}
+
+@keyframes dissapearing {
+    0% { opacity: 1; }
+    25% { opacity: 1; }
+    50% { opacity: 0.5; }
+    75% { opacity: 0.3; }
+    100% { opacity: 0.1; }
+}
+
+.win {
+    animation: blink 2s infinite !important;
+    transition: opacity 0.3s ease;
+}
+
+.dissapear {
+    animation: dissapearing 5s infinite;
+    transition: opacity 0.3s ease;
+}
